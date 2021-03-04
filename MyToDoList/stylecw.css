@@ -1,0 +1,122 @@
+ /* Style the header */
+ .main {
+    background-color: #8675c2;
+    padding: 30px 40px;
+    color: white;
+    text-align: left;
+  }
+  .body {
+    height: 100%;
+    background-image: linear-gradient(#b9af1d,#ff768c);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #0f222d;
+    background-size: auto;
+  }
+
+
+  /* Clear floats after the header */
+  .main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+html{
+    height: 100%;
+    background-image: linear-gradient(#b9af1d,#ff768c);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #0f222d;
+    background-size: auto;
+  }
+  
+  .main{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  h1{
+    text-align: center;
+    color: #fff;
+  }
+  form{
+    background-color: #fff;
+    padding: 15px;
+  }
+  input[type="text"]{
+    width: 310px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1.5em;
+    background: #fff;
+    color: #2f4f4f;
+  }
+  
+
+  /* Style the "Add" button */
+  .button {
+    padding: 10px;
+    width: 25%;
+    background: #dadd20;
+    color:Black;
+    float: left;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .button:hover {
+    background-color: rgb(206, 161, 228);
+  }
+  .tasksBoard{
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    /* display: none; */
+  
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    border-bottom: 1px solid #53BDFF;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1.3em;
+    color: #2f4f4f;
+  }
+  a{
+    float: right;
+    text-align: right;
+    color: rgb(97, 134, 255);
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .delete{
+    background-color: #ff8161;
+    padding: 0px 3px 0px 3px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    .main{
+      margin: auto;
+      width: 100%;
+    }
+    input[type="text"]{
+      width: 80%;
+    }
+    button{
+      width: 10%;
+    }
+  }
+ 
